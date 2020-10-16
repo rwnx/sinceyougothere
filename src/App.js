@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/accessible-emoji */
 import React, {useState} from 'react';
 import {Timer} from "./Timer";
 import {Ticker} from "./Ticker";
