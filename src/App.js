@@ -3,6 +3,8 @@ import {Timer} from "./Timer";
 import {Ticker} from "./Ticker";
 import './App.css';
 
+import packageJson from '../package.json';
+
 
 const TIMERS = [
     new Timer("Seconds ⌚").per("second"),
@@ -51,15 +53,29 @@ function App() {
     
     return (
         <div className="container">
-            <div className="content">
-            <h1>Since you arrived...</h1>
+          <div className="header">
+            <h1>Since you arrived <sup><code>v{packageJson.version}</code></sup></h1>
             <p>From the moment you got here, things have been happening. Take a look!</p>
-                <div className="target">{new Date(target).toString()} <button onClick={() => setTarget(+new Date())}>❎ Reset</button></div>
+          </div>
+          <div className="content">
+            <div className="controls">
+              <div>
+                You arrived at: 
+              <code className="controls__date">{new Date(target).toISOString()}</code>
+              </div>
+              <div>
+                <button onClick={() => setTarget(+new Date())}>❎ Reset</button>
+                <button onClick={(e) =>setShowNsfw(!showNsfw)}>{showNsfw ? "❌ Hide" : "🔞 Show"} NSFW</button>
+              </div>
+            </div>
+
             <div className="tickers">
               {TIMERS.filter((t) => t.isNsfw ? showNsfw : true).map(t => <Ticker key={t.id} timer={t} target={target} />)}
             </div>
-            <div className="footer"><button onClick={(e) =>setShowNsfw(!showNsfw)}>{showNsfw ? "❌ Hide" : "🔞 Show"} NSFW</button></div>
-            </div>
+          </div>
+          <div className="footer">
+            Got something to add? Send us a PR! <a href="https://github.com/jerometwell/sinceyougothere">GitHub</a>
+          </div>
         </div>
     )
 }
