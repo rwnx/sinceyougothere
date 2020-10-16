@@ -6,6 +6,19 @@ html, body {
     margin:0;
 }
 
+.header {
+  text-align: center;
+}
+.controls {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.controls__date {
+  background: #eee;
+  display: inline-block;
+  margin: 0 5px;
+}
 .ticker--nsfw {
   background: url('./nsfw.jpg');
   background-size: 70px;
