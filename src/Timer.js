@@ -26,6 +26,7 @@ export class Timer {
         return this;
     }
     per(per) {
+        this.timeUnit = per;
         this.rate = Timer.getRateFactor(per);
         return this;
     }
