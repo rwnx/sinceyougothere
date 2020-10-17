@@ -24,9 +24,9 @@ const TIMERS = [
     new Timer("Miles driven @ 70mph 🚗", 70, "mi").per("hour"),
     new Timer("Drives to the moon 🌝", 0.00029306451).per("hour"),
     new Timer("Blood Pumped @ 60bpm 🩸", 4.2, "litres").per("minute"),
-    new Timer("Earth Rotation 🌐", 40075, "km").per("day"),
+    new Timer("Earth Rotation 🌐", 1674.4, "km").per("hour").source("https://books.google.co.uk/books?id=w8PK2XFLLH8C&pg=PA244&redir_esc=y#v=onepage&q&f=false"),
     new Timer("Earth Orbits 🚀", 940000000, "km").per("year"),
-    new Timer("Global Tweets 🐦", 7165).per("second"),
+    new Timer("Tweets 🐦", 500000000).per("day").source("https://blog.twitter.com/engineering/en_us/a/2013/new-tweets-per-second-record-and-how.html"),
     new Timer("Internet Traffic 👩‍💻", 34068, "GB").per("second"),
     new Timer("Google Searches 🔎", 53640).per("second"),
     new Timer("Global Emails 💌", 2479545, "emails").per("second"),
@@ -42,7 +42,7 @@ const TIMERS = [
     new Timer("Cow Farts 🐄💨", 30, "balloons").per("day"),
     new Timer("Bullets Manufactured 🔫", 12000000000).per("year"),
     new Timer("Deaths Choking on ballpoint pens 🖊", 100, "💀").per("year").nsfw(),
-    new Timer("Miles driven by average person", 16550, "mi").per("year").source("https://www.fhwa.dot.gov/ohim/onh00/bar8.htm"),
+    new Timer("Miles driven by average person", 13476, "mi").per("year").source("https://www.fhwa.dot.gov/ohim/onh00/bar8.htm"),
     new Timer("Percentage Use of your next flat tire @ 70mph", 0.0672, "%").per("day"),
     new Timer("Flat Tires (US)", 220000000, "tyres").per("year").source("http://excelmathmike.blogspot.com/2011/04/phooey-on-flats-part-i.html")
 ];
