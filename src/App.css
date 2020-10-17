@@ -32,11 +32,10 @@ html, body {
     justify-content: space-between;
 }
 .ticker__value {
-    width: 100%;
 }
+
 .ticker__unit {
     font-size:12px;
-    width: 5em;
 }
 
 .timer__src {
