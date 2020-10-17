@@ -19,7 +19,9 @@ export function Ticker({timer, target}) {
     const value = prettify( rawValue > 10 ? Math.ceil(rawValue) : rawValue.toPrecision(2) );
     return ( 
         <div className={`ticker ${timer.isNsfw ? "ticker--nsfw" : ""}`}>
-            <div className="ticker__name">{timer.name}</div>
+            <div className="ticker__name">
+               {timer.src ? <a className="timer__src" href={timer.src}>{timer.name}</a> : timer.name} 
+            </div>
             <div className="ticker__value">{value}</div>
             <div className="ticker__unit">{timer.unit}</div>
         </div>
