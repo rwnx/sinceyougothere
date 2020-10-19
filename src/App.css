@@ -26,13 +26,14 @@ html, body {
 .ticker__name {
 
 }
-.ticker__unit, .ticker__value {
-    display: inline-block;
+
+.ticker__value_container {
+    display:flex;
+    justify-content: space-between;
+}
+.ticker__value {
 }
 
-.ticker__value {
-    font-size:24px;
-}
 .ticker__unit {
     font-size:12px;
 }
@@ -43,9 +44,8 @@ html, body {
     border-bottom: 1px dotted black;
 }
 .ticker {
-    display:block;
     width:225px;
-    height:120px;
+    height:90px;
     padding: 20px;
     margin:5px;
     box-sizing:border-box;

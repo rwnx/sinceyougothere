@@ -33,7 +33,6 @@ const TIMERS = [
     new Timer("Poop 💩", 430.9128, "g").per("day").nsfw(),
     new Timer("Urine 🚽", 1600, "ml").per("day").nsfw(),
     new Timer("Semen 💦", 63645.3, "ml").per("year").nsfw(),
-    new Timer("Miles walked by the Proclaimers if they were to complete their task in one day 🎸", 1000, "mi").per("day"),
     new Timer("Vending Machine Deaths 🥛", 10, "💀").per("year").nsfw(),
     new Timer("Individual UK energy use ⚡", 2089, "MW").per("hour"),
     new Timer("Individual UK energy use ⚡", 81291, "Pork Pies").per("hour"),
